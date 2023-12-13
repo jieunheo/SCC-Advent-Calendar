@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://grayson-choi.github.io/advent_calendar/">
-  <meta property="og:title" content="스파르타코딩클럽 크리스마스 디데이 캘린더">
+  <meta property="og:title" content="크리스마스 디데이 캘린더">
   <meta property="og:image" content="image/OGimage.png">
   <meta property="og:description" content="크리스마스까지 하루가 기다려지는 즐거움, 크리스마스 디데이 캘린더를 함께 만들어봐요!">
   <meta property="og:site_name" content="SCC Advent Calendar">
@@ -13,14 +13,13 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <title>Sparta Advend Calendar 2023</title>
+  <title>Advend Calendar 2023</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="snow.css">
   <link rel="stylesheet" href="share.css">
 </head>
 
 <body>
-  <!-- 이 곳에 뼈대 코드를 입력! -->
   <div class="snow-wrap">
     <div></div>
   </div>
@@ -28,6 +27,11 @@
     <div class="title flex-col item-baseline">
       <img src="image/merry.png">
       <div class="countdown">크리스마스까지 <span id="countdown" class="countdown"></span> 남음</div>
+      <div class="flex-row">
+        <audio class="bgm" src="carol.mp3" preload="auto" style="display: none;"></audio>
+        <div class="sound"></div>
+        <div class="sound stop"></div>
+      </div>
     </div>
     <div class="day-1">
       <label>
@@ -323,12 +327,7 @@
       <button id="shareButton">공유하기</button>
       <button id="studyButton"><a href="https://spartacodingclub.kr/">만들러 가기</a></button>
     </div>
-    <div class="flex-row">
-      <audio class="bgm" src="carol.mp3" preload="auto" style="display: none;"></audio>
-      <div class="sound"></div>
-      <div class="sound stop"></div>
-    </div>
-    <p class="copyright">Copyright ⓒ TeamSparta All rights reserved. ☃️</p>
+    <p class="copyright">Copyright ⓒ HJE All rights reserved. ☃️</p>
   </footer>
   <script src="index.js"></script>
   <script src="share.js"></script>

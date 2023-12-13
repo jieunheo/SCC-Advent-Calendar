@@ -17,7 +17,7 @@ function updateCountdown() {
 
   // 결과를 HTML에 업데이트
   const countdownElement = document.getElementById('countdown');
-  countdownElement.style.color = '#FF9EA9'
+  countdownElement.style.color = '#ec5353'
   countdownElement.innerHTML = `
       <span>D-${days} ${hours}시간${minutes}분${seconds}초</span>`;
 }
